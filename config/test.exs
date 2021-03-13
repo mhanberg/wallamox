@@ -16,7 +16,13 @@ config :wallamox, Wallamox.Repo,
 # you can enable the server option below.
 config :wallamox, WallamoxWeb.Endpoint,
   http: [port: 4002],
-  server: false
+  server: true
+
+config :wallaby, otp_app: :wallamox, base_url: "http://localhost:4002"
+
+config :wallamox, :sandbox, Wallamox.Sandbox
+config :wallamox, :mod, SomeMock
+config :wallamox, :mod2, AnotherMock
 
 # Print only warnings and errors during test
 config :logger, level: :warn

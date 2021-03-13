@@ -44,7 +44,7 @@ defmodule Wallamox.MixProject do
       {:telemetry_poller, "~> 0.4"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:wallaby, "~> 0.28.0", runtime: false, only: :test},
+      {:wallaby, "~> 0.28.0", only: :test},
       {:mox, "~> 1.0", only: :test}
     ]
   end
